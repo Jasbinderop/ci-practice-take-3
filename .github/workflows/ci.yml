@@ -1,0 +1,17 @@
+name: Build HTML site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build project
+        run: echo "Building the static HTML site"
